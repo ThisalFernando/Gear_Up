@@ -1,0 +1,96 @@
+.main_container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 208, 255);
+    max-width: 100vh;
+    height: 100vh;
+    padding: 100px;
+}
+
+.container{
+    padding: 40px;
+    box-shadow: 0 0 10px #3f3f3f77;
+    background-color: #ffffff;
+    width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 50px;
+    border-color: black;
+    border-width: 1px;
+    -webkit-text-stroke: 0.8px black; /* Stroke thickness and color */
+}
+
+form div{
+    margin-bottom: 10px;
+}
+
+.lblEmail{
+    text-align: left;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0 0 10px #3f3f3f2a;
+}
+
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #004880;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+    font-weight: bold;
+    font-size: medium;
+    box-shadow: 0 0 10px #3f3f3fca;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+@media (max-width: 858px){
+    .main_container{
+        width: 50vh;
+        padding: 70px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .container{
+        display: flex;
+        width: 32vh;
+        height: 300px;
+    }
+
+    input{
+        width: 200px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    button{
+        width: 200px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    label{
+        font-size: 13px;
+    }
+}

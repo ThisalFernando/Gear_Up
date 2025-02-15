@@ -1,0 +1,89 @@
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.647);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    text-align: left;
+}
+
+th{
+    background-color: rgba(255, 255, 255, 0.647);
+    font-weight: bold;
+}
+
+.tHeading{
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.647);
+}
+
+.heading{
+    box-shadow: 0 0 10px #3f3f3f77;
+    background-color: #ffffff;
+    width:600px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.updateBtn {
+    background-color: #015f30;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3f3f3fca;
+}
+
+.updateBtn:hover{
+    opacity: 0.8;
+} 
+
+.deleteBtn:hover{
+    opacity: 0.8;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3f3f3fca;
+}
+
+#contBtn{
+    width: 1370px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgba(0, 255, 179, 0.762);
+    background-color: rgba(0, 255, 179, 0.762);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px #7c7c7cca;
+    text-align: center;
+    cursor: pointer;
+}
+
+.end_text{
+    font-size: 50px;
+    color: #015f30;
+}
