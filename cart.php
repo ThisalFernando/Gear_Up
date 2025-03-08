@@ -69,7 +69,7 @@ $result = $conn->query($sql);
         </table><br><br>
         <a href="Products.php"><button id="contBtn">CONTINUE SHOPPING</button></a>
         <br><br>
-        <a href="OrderDetails.php"><button id="contBtn">SUBMIT ORDER DETAILS</button></a><br><br>
+        <a href="OrderDetails.php"><button id="contBtn">SUBMIT ORDER DETAILS</button></a><br><br><br>
 
     </section>
 
