@@ -1,5 +1,5 @@
 section {
-    background: url('../Images/BGImage02.jpg') no-repeat;
+    background: linear-gradient(rgba(215, 215, 215, 0.296)50%,rgba(215, 215, 215, 0.296)50%), url('../Images/BGImage04.avif') no-repeat;
     background-size: cover;
     background-position: center;
 }
