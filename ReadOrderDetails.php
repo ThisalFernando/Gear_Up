@@ -27,7 +27,7 @@ $result = $conn->query($sql);
             <div>
             <ul>
                 <li><a href="UserDetails.php">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="Products.php">Products</a></li>
                 <li><a href="cart.php">Cart</a></li>
                 <li><a href="OrderDetails.php">Payments</a></li>
             </ul>
@@ -45,6 +45,7 @@ $result = $conn->query($sql);
                 <th>Address</th>
                 <th>Payment Method</th>
                 <th>Phone Number</th>
+                <th>Actions</th>
             </tr>
             <?php $total = 0; ?>
             <?php while ($row = $result->fetch_assoc()) { ?>
@@ -53,17 +54,23 @@ $result = $conn->query($sql);
                 <td><?= $row['Address'] ?></td>
                 <td><?= $row['PaymentMethod'] ?></td>
                 <td><?= $row['Phone']?></td>
-
+                <td>
+                    <a class='updateBtn' href="UpdateOrder.php?oid=<?= $row['oid'] ?>">Update</a>
+                    <a class='deleteBtn' href="DeleteOrder.php?oid=<?= $row['oid'] ?>">Delete</a>
+                </td>
             </tr>
             
             <?php } ?>
             
         </table><br><br>
         <a href="Products.php"><button id="contBtn">CONTINUE SHOPPING</button></a>
-        <br><br><br><br><br><br><br>
-        <div class="end_text">THANK YOU FOR CHOOSING US!</div>
+        <br><br>
+        <a href="#"><button id="contBtn">CONFIRM PAYMENT</button></a>
+        <br><br><br><br><br>
+        <div class="end_text"><b>THANK YOU FOR CHOOSING US!</b></div>
+        <br><br><br><br><br><br>
     </section>
-    <br><br><br>
+    
     <footer>
         <div class="footer">
             <h4>Copyright © 2024 GearUp | All rights reserved. | Powered by <a href="">Flexwalkers</a></h4>

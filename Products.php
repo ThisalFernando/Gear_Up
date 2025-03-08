@@ -73,10 +73,8 @@ $result = $conn->query($sql);
                 ?>
             </div>
         </div>
-        </div>
+        </div><br><br>
     </section>
-
-    <br><br>
 
     <footer>
         <div class="footer">
