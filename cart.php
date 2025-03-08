@@ -27,8 +27,8 @@ $result = $conn->query($sql);
             <div>
             <ul>
                 <li><a href="UserDetails.php">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="cart.php">Cart</a></li>
+                <li><a href="Products.php">Products</a></li>
+                <li><a href="#">Cart</a></li>
                 <li><a href="OrderDetails.php">Payments</a></li>
             </ul>
             </div>
@@ -55,8 +55,8 @@ $result = $conn->query($sql);
                 <td><?= $row['quantity'] ?></td>
                 <td>LKR <?= $row['price'] * $row['quantity'] ?></td>
                 <td>
-                    <a class='updateBtn' href="remove_from_cart.php?id=<?= $row['cid'] ?>">Update</a>
-                    <a class='deleteBtn' href="DeleteProduct.php?id=<?= $row['cid'] ?>">Delete</a>
+                    <a class='updateBtn' href="UpdateProduct.php?id=<?= $row['cid'] ?>">Update</a>
+                    <a class='deleteBtn' href="DeleteProduct.php?cid=<?= $row['cid'] ?>">Delete</a>
                 </td>
             </tr>
             <?php $total += $row['price'] * $row['quantity']; ?>
@@ -70,6 +70,7 @@ $result = $conn->query($sql);
         <a href="Products.php"><button id="contBtn">CONTINUE SHOPPING</button></a>
         <br><br>
         <a href="OrderDetails.php"><button id="contBtn">SUBMIT ORDER DETAILS</button></a><br><br>
+
     </section>
 
     <footer>
