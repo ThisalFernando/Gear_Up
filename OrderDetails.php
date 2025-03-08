@@ -73,9 +73,9 @@
                 <center><h4>Access to the order details</h4></center>
                 <a href="ReadOrderDetails.php"><button class="signupBtn">ACCESS TO ORDER DETAILS</button></a>
             </div>
-            
         </div>
     </section>
+    
     <footer>
         <div class="footer">
         <h4>Copyright © 2024 GearUp | All rights reserved. | Powered by <a href="">Flexwalkers</a></h4>
