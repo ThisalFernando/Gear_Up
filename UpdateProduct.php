@@ -34,7 +34,7 @@ if (isset($_GET['id'])) {
     <!--Internal Styles was applied-->
     <style>
         section{
-            background: url('./Images/BGImage02.jpg') no-repeat;
+            background: url('./Images/BGImage04.avif') no-repeat;
             background-size: cover;
             background-position: center;
         }
