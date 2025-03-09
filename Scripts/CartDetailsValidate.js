@@ -1,3 +1,4 @@
+//Function to confirm continuation of doing shopping
 function confirmShopping() {
     Swal.fire({
         title: 'Are you sure?',
@@ -9,7 +10,7 @@ function confirmShopping() {
         showCancelButton: true,
         confirmButtonText: 'Yes, Continue!',
         cancelButtonText: 'Cancel', 
-        buttonsStyling: false,// Disable default SweetAlert2 button styling
+        buttonsStyling: false,
         didRender: () => {
         const confirmButton = Swal.getConfirmButton();
         const cancelButton = Swal.getCancelButton();

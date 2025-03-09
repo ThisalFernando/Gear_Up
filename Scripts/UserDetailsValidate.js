@@ -1,3 +1,4 @@
+//Function to confirm submit user details
 function confirmSubmit(form) {
     Swal.fire({
         title: 'Are you sure?',
@@ -9,7 +10,7 @@ function confirmSubmit(form) {
         showCancelButton: true,
         confirmButtonText: 'Yes, Submit!',
         cancelButtonText: 'Cancel', 
-        buttonsStyling: false,// Disable default SweetAlert2 button styling
+        buttonsStyling: false,
         didRender: () => {
         const confirmButton = Swal.getConfirmButton();
         const cancelButton = Swal.getCancelButton();
@@ -39,7 +40,37 @@ function confirmSubmit(form) {
     })
     .then((result) =>{
         if(result.isConfirmed){
-            form.submit();
+            setTimeout(function () {
+                Swal.fire(
+                    {
+                        title: 'Success',
+                        text: "Your details are added!",
+                        icon: 'success',
+                        buttons: true,
+                        dangerMode: true,
+                        buttonsStyling: false,
+                        showCancelButton: false,
+                        confirmButtonText: 'OK', 
+                        buttonsStyling: false,
+                        didRender: () => {
+                        const confirmButton = Swal.getConfirmButton();
+                    
+                        // Apply styles directly using JavaScript
+                        confirmButton.style.backgroundColor = '#015f30';
+                        confirmButton.style.color = 'white';
+                        confirmButton.style.width = '450px';
+                        confirmButton.style.border = 'none';
+                        confirmButton.style.borderRadius = '5px';
+                        confirmButton.style.padding = '10px';
+                        confirmButton.style.fontWeight = 'bold';
+                        confirmButton.style.fontSize = 'medium';
+                        confirmButton.style.cursor = 'pointer';
+                        },
+                    }
+                ).then(() => {
+                    form.submit();
+                });
+            }, 1000);
         }
     });
 
