@@ -8,55 +8,7 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/userStyle.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function confirmSubmit(form) {
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "Do you want to submit details?",
-                icon: 'question',
-                buttons: true,
-                dangerMode: true,
-                buttonsStyling: false,
-                showCancelButton: true,
-                confirmButtonText: 'Yes, Submit!',
-                cancelButtonText: 'Cancel', 
-                buttonsStyling: false,// Disable default SweetAlert2 button styling
-                didRender: () => {
-                const confirmButton = Swal.getConfirmButton();
-                const cancelButton = Swal.getCancelButton();
-            
-                // Apply styles directly using JavaScript
-                confirmButton.style.backgroundColor = '#015f30';
-                confirmButton.style.color = 'white';
-                confirmButton.style.width = '450px';
-                confirmButton.style.border = 'none';
-                confirmButton.style.borderRadius = '5px';
-                confirmButton.style.padding = '10px';
-                confirmButton.style.fontWeight = 'bold';
-                confirmButton.style.fontSize = 'medium';
-                confirmButton.style.cursor = 'pointer';
-
-                cancelButton.style.backgroundColor = 'red'; 
-                cancelButton.style.color = 'white';
-                cancelButton.style.width = '450px';
-                cancelButton.style.border = 'none';
-                cancelButton.style.borderRadius = '5px';
-                cancelButton.style.padding = '10px';
-                cancelButton.style.fontWeight = 'bold';
-                cancelButton.style.fontSize = 'medium';
-                cancelButton.style.cursor = 'pointer'
-                cancelButton.style.marginTop = '10px';
-                },
-            })
-            .then((result) =>{
-                if(result.isConfirmed){
-                    form.submit();
-                }
-            });
-
-            return false; 
-        }
-    </script>
+    <script src="Scripts/UserDetailsValidate.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
